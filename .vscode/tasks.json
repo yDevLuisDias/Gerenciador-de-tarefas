@@ -4,12 +4,12 @@
         {
             "label": "Compilar Programa",
             "type": "shell",
-            "command": "/usr/bin/gcc", // Caminho para o GCC
+            "command": "/usr/bin/gcc",
             "args": [
                 "main.c",
                 "tarefas.c",
                 "-o",
-                "gerenciador", // Nome do executável gerado
+                "gerenciador",
                 "-I."
             ],
             "group": {
