@@ -5,7 +5,7 @@
             "name": "Compilar e Executar",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/gerenciador", // Caminho do executável gerado
+            "program": "${workspaceFolder}/gerenciador",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
@@ -19,8 +19,8 @@
                     "ignoreFailures": true
                 }
             ],
-            "preLaunchTask": "Compilar Programa", // Nome da tarefa de pré-compilação
-            "miDebuggerPath": "/usr/bin/gdb" // Caminho para o GDB
+            "preLaunchTask": "Compilar Programa",
+            "miDebuggerPath": "/usr/bin/gdb"
         }
     ]
 }
