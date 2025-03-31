@@ -1,0 +1,26 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Compilar e Executar",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/gerenciador", // Caminho do executável gerado
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Habilitar impressão de valores para o GDB",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "Compilar Programa", // Nome da tarefa de pré-compilação
+            "miDebuggerPath": "/usr/bin/gdb" // Caminho para o GDB
+        }
+    ]
+}

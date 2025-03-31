@@ -1,0 +1,23 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Compilar Programa",
+            "type": "shell",
+            "command": "/usr/bin/gcc", // Caminho para o GCC
+            "args": [
+                "main.c",
+                "tarefas.c",
+                "-o",
+                "gerenciador", // Nome do executável gerado
+                "-I."
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"],
+            "detail": "Compila o programa principal e gera o executável."
+        }
+    ]
+}
